@@ -7,5 +7,3 @@ button.addEventListener("click", () => {
   let name = exampleForm.value;
   return getAPIResponse(name);
 });
-
-
