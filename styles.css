@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i');
+
+*{
+  box-sizing:border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body, html{
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+   background-image: linear-gradient(to right top, #a2beeb, #8ecfee, #8edde5, #a4e7d5, #c7eec7);
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.title {
+    margin-bottom: 30px;
+    color: #162969;
+}
+
+
+.card{
+width: 320px;
+height: 190px;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective:600px;
+  
+}
+
+.card__part{
+  box-shadow: 1px 1px #aaa3a3;
+    top: 0;
+  position: absolute;
+z-index: 1000;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+    width: 320px;
+    height: 190px;
+    background-image: url('https://image.ibb.co/bVnMrc/g3095.png'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+   
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.card__front{
+  padding: 18px;
+-webkit-transform: rotateY(0);
+-moz-transform: rotateY(0);
+}
+
+.card__back {
+  padding: 18px 0;
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+}
+
+
+.card__logo {
+    height: 16px;
+}
+
+.card__front-logo{
+      position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+
+.card__square {
+    border-radius: 5px;
+    height: 60px;
+}
+
+
+
+.card__back-logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.card__back-square {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.card:hover .card__front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+
+}
+
+.card:hover .card__back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+h4{
+  margin: 0;
+}
+
+.right_column{
+  padding-left: 15px;
+}
+
+.left_column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.github_logo{
+  font-size: 40px;
+  margin-right: 5px;
+  margin-top: 40px;
+}
+
+/*This is coded CSS rainbow*/
+
+#github_logo_card {
+-webkit-animation:rainbow 5s infinite;
+-ms-animation:rainbow 5s infinite;
+-o-animation:rainbow 5s infinite;
+animation:rainbow 5s infinite;
+}
+@-webkit-keyframes rainbow {
+0% {color: #757575;}
+10% {color: #8b8b8b;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #666666;}
+90% {color: #646464;}
+100% {color: #757575;}
+}
+@-ms-keyframes rainbow {
+0% {color: #757575;}
+10% {color: #8b8b8b;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #666666;}
+90% {color: #646464;}
+100% {color: #757575;}
+}
+@-o-keyframes rainbow {
+0% {color: #757575;}
+10% {color: #8b8b8b;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #666666;}
+90% {color: #646464;}
+100% {color: #757575;}
+}
+@keyframes rainbow {
+0% {color: #757575;}
+10% {color: #8b8b8b;}
+20% {color: #ffff00;}
+30% {color: #80ff00;}
+40% {color: #00ff00;}
+50% {color: #00ff80;}
+60% {color: #00ffff;}
+70% {color: #0080ff;}
+80% {color: #666666;}
+90% {color: #646464;}
+100% {color: #757575;}
+}
