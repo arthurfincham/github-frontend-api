@@ -42,6 +42,7 @@ body {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px;
+
 }
 
 .card__part {
@@ -56,7 +57,7 @@ body {
   width: 350px;
   height: 210px;
   background-image: url("https://media.istockphoto.com/photos/pastel-colored-holographic-background-picture-id1144959743?k=20&m=1144959743&s=170667a&w=0&h=a9HwsJhxHPb21T4EgHB1IFlRERsbq65jb0Blv6N_nj4="),
-    linear-gradient(to left bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
+    linear-gradient(to left bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7);
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
   background-position: center;
@@ -174,12 +175,18 @@ td {
 #github_logo_card {
   font-size: 60px;
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 25px;
-  -webkit-animation: rainbow 3s infinite;
+  line-height: 1px;
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-size: initial;
+background-image: url("public/logo_animation.gif")
+  /* -webkit-animation: rainbow 3s infinite;
   -ms-animation: rainbow 3s infinite;
   -o-animation: rainbow 3s infinite;
-  animation: rainbow 3s infinite;
+  animation: rainbow 3s infinite; */
 }
 @-webkit-keyframes rainbow {
   0% {
