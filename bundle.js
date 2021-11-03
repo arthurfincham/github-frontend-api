@@ -66,6 +66,8 @@
   var button = document.querySelector("#trigger-btn");
   var card = document.querySelector("#dev_card");
   var input = document.querySelector("#name_input");
+  var front = document.querySelector("#front_of_card");
+  var back = document.querySelector("#back_of_card");
   var show_card = () => {
     input.style.display = "none";
     card.style.display = "block";

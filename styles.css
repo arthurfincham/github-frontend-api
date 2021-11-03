@@ -30,8 +30,8 @@ body{
 
 .card{
   display: none;
-width: 320px;
-height: 190px;
+width: 350px;
+height: 210px;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective:600px;
@@ -47,8 +47,8 @@ border: 1px solid rgb(124, 64, 121);
   left: 0;
   display: flex;
   flex-direction: row;
-    width: 320px;
-    height: 190px;
+    width: 350px;
+    height: 210px;
     background-image: url('https://media.istockphoto.com/photos/pastel-colored-holographic-background-picture-id1144959743?k=20&m=1144959743&s=170667a&w=0&h=a9HwsJhxHPb21T4EgHB1IFlRERsbq65jb0Blv6N_nj4='), linear-gradient(to right bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
@@ -108,7 +108,7 @@ table, th, td {
 
 .card__square {
     border-radius: 5px;
-    height: 60px;
+    height: 70px;
     filter: saturate(50%);
 }
 
@@ -275,9 +275,22 @@ ol li{
 .card_front_content{
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 }
 
 h4{
   margin: 10px 0 0 0;
   padding: 0;
+}
+
+#name_input{
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trigger-btn{
+  width: 100px;
 }
