@@ -49,11 +49,12 @@
         container.innerHTML = html;
         container_back.innerHTML = html_back;
       };
-      var getAPIResponse2 = (name) => {
+      var getAPIResponse2 = (name, callback) => {
         console.log(`https://api.github.com/users/${name}`);
         fetch(`https://api.github.com/users/${name}`).then((res) => res.json()).then(function(data) {
           makeDoc(data);
         });
+        callback;
       };
       module.exports = getAPIResponse2;
     }
@@ -63,8 +64,14 @@
   var getAPIResponse = require_github_api();
   var exampleForm = document.getElementById("username");
   var button = document.querySelector("#trigger-btn");
+  var card = document.querySelector("#dev_card");
+  var input = document.querySelector("#name_input");
+  var show_card = () => {
+    input.style.display = "none";
+    card.style.display = "block";
+  };
   button.addEventListener("click", () => {
     let name = exampleForm.value;
-    return getAPIResponse(name);
+    return getAPIResponse(name, show_card());
   });
 })();

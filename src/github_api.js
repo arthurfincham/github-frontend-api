@@ -46,13 +46,14 @@ const makeDoc = (data) => {
 }
 
 
-const getAPIResponse = (name) => {
+const getAPIResponse = (name, callback) => {
   console.log(`https://api.github.com/users/${name}`)
   fetch(`https://api.github.com/users/${name}`)
     .then(res => res.json())
     .then(function(data){
       makeDoc(data)
     })
+    callback;
 };
 
 

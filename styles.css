@@ -29,6 +29,7 @@ body{
 
 
 .card{
+  display: none;
 width: 320px;
 height: 190px;
   -webkit-perspective: 600px;
