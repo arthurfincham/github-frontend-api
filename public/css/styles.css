@@ -178,7 +178,7 @@ td {
   -webkit-background-clip: text;
   color: transparent;
   background-size: initial;
-  background-image: url("public/logo_animation.gif");
+  background-image: url("images/logo_animation.gif");
   /* -webkit-animation: rainbow 3s infinite;
   -ms-animation: rainbow 3s infinite;
   -o-animation: rainbow 3s infinite;
