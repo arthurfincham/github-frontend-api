@@ -5,25 +5,29 @@ const makeDoc = (data) => {
                             <i id="github_logo_card" class="bi bi-github github_logo card__square"></i>
                             </div>
                             <div class="right_column">
-                            <p id="bold_id">${data.id}</p>
-                            <p>${data.name}</p>
-                            <p>${data.company}</p>
-                            <p>${data.location}</p>
-                            <p id="small_desc">${data.bio}</p>
+                            <ol id="font_ol">
+                            <li><span id="bold_id">${data.id}</span></li>
+                            <li>${data.name}</li>
+                            <li>${data.company}</li>
+                            <li>${data.location}</li>
+                            <li><span class="smaller_text">${data.bio}</span></li>
+                            <li><span class="smaller_text">${data.html_url}</span></li>
+                            </ol>
                             </div>`;
 
         html += htmlSegment;
         let html_back = '';
         let htmlSegment_back = `<div class="card_back_info">
-                            <p>1. ${data.created_at}</p>
-                            <p>2. ${data.updated_at}</p>
-                            <p>3. ${data.public_repos}</p>
-                            <p>4. ${data.followers}</p>
-                            <p>5. ${data.following}</p>
-                            
+                            <table>
+                            <tr><td>7.</td><td>${data.created_at}</td></tr>
+                            <tr><td>8.</td><td>${data.updated_at}</td></tr>
+                            <tr><td>9.</td><td>${data.public_repos}</td></tr>
+                            <tr><td>10.</td><td>${data.followers}</td></tr>
+                            <tr><td>11.</td><td>${data.following}</td></tr>
+                            </table>
                         </div>
                         <div class="card_back_descriptors">
-      <p>1. Created at; 2. Updated at; 3. Repositories; 4. Followers; 5. Following;</p>
+      <p>1. ID; 2. Name; 3. Company; 4. Location; 5. Biography; 6: URL; 7. Created at; 8. Updated at; 9. Repositories; 10. Followers; 11. Following;</p>
     </div>`;
     html_back += htmlSegment_back
 

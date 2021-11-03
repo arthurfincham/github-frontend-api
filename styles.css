@@ -42,13 +42,15 @@ height: 190px;
     top: 0;
   position: absolute;
 z-index: 1000;
+border: 1px solid rgb(124, 64, 121);
   left: 0;
   display: flex;
   flex-direction: row;
     width: 320px;
     height: 190px;
-    background-image: url('https://image.ibb.co/bVnMrc/g3095.png'), linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
+    background-image: url('https://media.istockphoto.com/photos/pastel-colored-holographic-background-picture-id1144959743?k=20&m=1144959743&s=170667a&w=0&h=a9HwsJhxHPb21T4EgHB1IFlRERsbq65jb0Blv6N_nj4='), linear-gradient(to right bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
     background-repeat: no-repeat;
+    background-blend-mode:soft-light;
     background-position: center;
     background-size: cover;
     border-radius: 8px;
@@ -74,9 +76,20 @@ z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 18px 1px 2px 10px;
+
 -webkit-transform: rotateY(-180deg);
 -moz-transform: rotateY(-180deg);
+}
+
+table{
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid rgb(114, 114, 114);
+  border-collapse: collapse;
+  padding: 2px;
 }
 
 
@@ -94,6 +107,7 @@ z-index: 1000;
 .card__square {
     border-radius: 5px;
     height: 60px;
+    filter: saturate(50%);
 }
 
 
@@ -137,8 +151,13 @@ h4{
 }
 
 .right_column > * {
-  font-size: 13px;
+  font-size: 11px;
   margin: 5px;
+  text-transform:uppercase;
+}
+
+.smaller_text{
+  font-size: 10px;
 }
 
 .left_column{
@@ -151,72 +170,83 @@ h4{
 
 .github_logo{
   font-size: 40px;
+  margin-right: 5px;
+
 }
 
 /*This is coded CSS rainbow*/
 
 #github_logo_card {
--webkit-animation:rainbow 5s infinite;
--ms-animation:rainbow 5s infinite;
--o-animation:rainbow 5s infinite;
-animation:rainbow 5s infinite;
+-webkit-animation:rainbow 3s infinite;
+-ms-animation:rainbow 3s infinite;
+-o-animation:rainbow 3s infinite;
+animation:rainbow 3s infinite;
 }
 @-webkit-keyframes rainbow {
-0% {color: #757575;}
-10% {color: #8b8b8b;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #666666;}
-90% {color: #646464;}
-100% {color: #757575;}
+0% {color: #cecece;}
+10% {color: #cecece;}
+20% {color: #cecece;}
+30% {color: rgb(230, 188, 238);}
+40% {color: #cecece;}
+50% {color: #cecece;}
+60% {color: #a7e9e9;}
+70% {color: #cecece;}
+80% {color: #cecece;}
+90% {color: #fffbc2;}
+100% {color: #cecece;}
 }
 @-ms-keyframes rainbow {
-0% {color: #757575;}
-10% {color: #8b8b8b;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #666666;}
-90% {color: #646464;}
-100% {color: #757575;}
+0% {color: #cecece;}
+10% {color: #cecece;}
+20% {color: #cecece;}
+30% {color: rgb(230, 188, 238);}
+40% {color: #cecece;}
+50% {color: #cecece;}
+60% {color: #a7e9e9;}
+70% {color: #cecece;}
+80% {color: #cecece;}
+90% {color: #fffbc2;}
+100% {color: #cecece;}
 }
 @-o-keyframes rainbow {
-0% {color: #757575;}
-10% {color: #8b8b8b;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #666666;}
-90% {color: #646464;}
-100% {color: #757575;}
+0% {color: #cecece;}
+10% {color: #cecece;}
+20% {color: #cecece;}
+30% {color: rgb(230, 188, 238);}
+40% {color: #cecece;}
+50% {color: #cecece;}
+60% {color: #a7e9e9;}
+70% {color: #cecece;}
+80% {color: #cecece;}
+90% {color: #fffbc2;}
+100% {color: #cecece;}
 }
 @keyframes rainbow {
-0% {color: #757575;}
-10% {color: #8b8b8b;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #666666;}
-90% {color: #646464;}
-100% {color: #757575;}
+0% {color: #cecece;}
+10% {color: #cecece;}
+20% {color: #cecece;}
+30% {color: rgb(230, 188, 238);}
+40% {color: #cecece;}
+50% {color: #cecece;}
+60% {color: #a7e9e9;}
+70% {color: #cecece;}
+80% {color: #cecece;}
+90% {color: #fffbc2;}
+100% {color: #cecece;}
 }
 
 .card_back_info{
-  margin-left: 5px;
-  width: 100%;
+  width: 80%;
+  margin-left: 10px;
+}
+
+ol li{
+  list-style-position: outside;
+  margin-left: 15px;
+}
+
+#font_ol{
+  padding: 0;
 }
 
 
@@ -234,4 +264,5 @@ animation:rainbow 5s infinite;
 .card_back_descriptors > * {
   font-size: 8px;
   padding: 10px 10px 0px 10px;
+  text-transform:uppercase;
 }
