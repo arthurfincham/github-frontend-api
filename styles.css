@@ -126,13 +126,13 @@ table, th, td {
     left: 15px;
 }
 
-.card:hover .card__front {
+.rotation:hover .rotation__front {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
 
 }
 
-.card:hover .card__back {
+.rotation:hover .rotation__back {
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
 }
