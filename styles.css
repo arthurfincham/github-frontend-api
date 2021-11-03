@@ -71,6 +71,9 @@ z-index: 1000;
 }
 
 .card__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 18px 0;
 -webkit-transform: rotateY(-180deg);
 -moz-transform: rotateY(-180deg);
@@ -122,21 +125,32 @@ h4{
   margin: 0;
 }
 
+#bold_id{
+  font-weight: bold;
+}
+
+#small_desc{
+  font-size: 10px;
+}
 .right_column{
   padding-left: 15px;
+}
+
+.right_column > * {
+  font-size: 13px;
+  margin: 5px;
 }
 
 .left_column{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 
 }
 
 .github_logo{
   font-size: 40px;
-  margin-right: 5px;
-  margin-top: 40px;
 }
 
 /*This is coded CSS rainbow*/
@@ -198,4 +212,26 @@ animation:rainbow 5s infinite;
 80% {color: #666666;}
 90% {color: #646464;}
 100% {color: #757575;}
+}
+
+.card_back_info{
+  margin-left: 5px;
+  width: 100%;
+}
+
+
+
+.card_back_descriptors{
+  width: 100%;
+}
+
+.card_back_info > * {
+  font-size: 10px;
+  margin: 2px;
+  padding: 2px
+}
+
+.card_back_descriptors > * {
+  font-size: 8px;
+  padding: 10px 10px 0px 10px;
 }
