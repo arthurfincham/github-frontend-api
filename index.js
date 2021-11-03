@@ -12,21 +12,9 @@ const show_card = () => {
   card.style.display = 'block';
 };
 
-const add_rotation = () => {
-  card.classList.add("rotation");
-  front.classList.add("rotation");
-  front.classList.add("rotation__front");
-  back.classList.add("rotation");
-  back.classList.add("rotation__back");
-}
-
-function myFunction() {
-  setTimeout(add_rotation, 2000);
-}
 
 button.addEventListener("click", () => {
   let name = exampleForm.value;
-  myFunction();
   return getAPIResponse(name, show_card());
 });
 
