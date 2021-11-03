@@ -67,7 +67,8 @@ border: 1px solid rgb(124, 64, 121);
 }
 
 .card__front{
-  padding: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
 -webkit-transform: rotateY(0);
 -moz-transform: rotateY(0);
 }
@@ -135,9 +136,7 @@ table, th, td {
     -moz-transform: rotateY(0deg);
 }
 
-h4{
-  margin: 0;
-}
+
 
 #bold_id{
   font-weight: bold;
@@ -168,71 +167,71 @@ h4{
 
 }
 
-.github_logo{
-  font-size: 40px;
-  margin-right: 5px;
-
-}
 
 /*This is coded CSS rainbow*/
 
 #github_logo_card {
+  font-size: 50px;
+  position: absolute;
+  top: 5;
+  right: 0;
+  margin-right: 12px;
 -webkit-animation:rainbow 3s infinite;
 -ms-animation:rainbow 3s infinite;
 -o-animation:rainbow 3s infinite;
 animation:rainbow 3s infinite;
 }
 @-webkit-keyframes rainbow {
-0% {color: #cecece;}
-10% {color: #cecece;}
-20% {color: #cecece;}
-30% {color: rgb(230, 188, 238);}
-40% {color: #cecece;}
-50% {color: #cecece;}
-60% {color: #a7e9e9;}
-70% {color: #cecece;}
-80% {color: #cecece;}
+0% {color: #ffffff;}
+10% {color: #ffffff;}
+20% {color: #ffffff;}
+30% {color: #ffffff;}
+40% {color: #e6fbff;}
+50% {color: #ffffff;}
+60% {color: #ffffff;}
+70% {color: #ffffff;}
+80% {color: #ffffff;}
 90% {color: #fffbc2;}
-100% {color: #cecece;}
+100% {color: #ffffff;}
 }
 @-ms-keyframes rainbow {
-0% {color: #cecece;}
-10% {color: #cecece;}
-20% {color: #cecece;}
-30% {color: rgb(230, 188, 238);}
-40% {color: #cecece;}
-50% {color: #cecece;}
-60% {color: #a7e9e9;}
-70% {color: #cecece;}
-80% {color: #cecece;}
+0% {color: #ffffff;}
+10% {color: #ffffff;}
+20% {color: #ffffff;}
+30% {color: #ffffff;}
+40% {color: #ffffff;}
+50% {color: #e6fbff;}
+60% {color: #ffffff;}
+70% {color: #ffffff;}
+80% {color: #ffffff;}
 90% {color: #fffbc2;}
-100% {color: #cecece;}
+100% {color: #ffffff;}
 }
 @-o-keyframes rainbow {
-0% {color: #cecece;}
-10% {color: #cecece;}
-20% {color: #cecece;}
-30% {color: rgb(230, 188, 238);}
-40% {color: #cecece;}
-50% {color: #cecece;}
-60% {color: #a7e9e9;}
-70% {color: #cecece;}
-80% {color: #cecece;}
+0% {color: #ffffff;}
+10% {color: #ffffff;}
+20% {color: #ffffff;}
+30% {color: #ffffff;}
+40% {color: #ffffff;}
+50% {color: #e6fbff;}
+60% {color: #ffffff;}
+70% {color: #ffffff;}
+80% {color: #ffffff;}
 90% {color: #fffbc2;}
-100% {color: #cecece;}
+100% {color: #ffffff;}
 }
 @keyframes rainbow {
-0% {color: #cecece;}
-10% {color: #cecece;}
-20% {color: #cecece;}
-30% {color: rgb(230, 188, 238);}
-40% {color: #cecece;}
-50% {color: #cecece;}
-60% {color: #a7e9e9;}
-70% {color: #cecece;}
-80% {color: #cecece;}
+0% {color: #ffffff;}
+10% {color: #ffffff;}
+20% {color: #ffffff;}
+30% {color: #ffffff;}
+40% {color: #ffffff;}
+50% {color: #e6fbff;}
+60% {color: #ffffff;}
+70% {color: #ffffff;}
+80% {color: #ffffff;}
 90% {color: #fffbc2;}
-100% {color: #cecece;}
+100% {color: #ffffff;}
 }
 
 .card_back_info{
@@ -265,4 +264,19 @@ ol li{
   font-size: 8px;
   padding: 10px 10px 0px 10px;
   text-transform:uppercase;
+}
+
+.card_front_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.card_front_content{
+  display: flex;
+  flex-direction: row;
+}
+
+h4{
+  margin: 10px 0 0 0;
+  padding: 0;
 }

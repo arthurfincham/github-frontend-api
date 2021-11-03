@@ -1,8 +1,13 @@
 const makeDoc = (data) => {
     let html = '';
-        let htmlSegment = `<div class="left_column">
+        let htmlSegment = `
+        <div class="card_front_wrapper">
+        <i id="github_logo_card" class="bi bi-github github_logo card__square"></i>
+        <h4>DEV LICENCE</h4>
+        <div class="card_front_content">
+        <div class="left_column">
                             <img src="${data.avatar_url}"  class="card__front-square card__square">
-                            <i id="github_logo_card" class="bi bi-github github_logo card__square"></i>
+                            
                             </div>
                             <div class="right_column">
                             <ol id="font_ol">
@@ -13,6 +18,8 @@ const makeDoc = (data) => {
                             <li><span class="smaller_text">${data.bio}</span></li>
                             <li><span class="smaller_text">${data.html_url}</span></li>
                             </ol>
+                            </div>
+                            </div>
                             </div>`;
 
         html += htmlSegment;
