@@ -11,6 +11,7 @@
         let htmlSegment = `
         <div class="card_front_wrapper">
         <i id="github_logo_card" class="bi bi-github github_logo card__square"></i>
+        <h5>${data.type}${data.id}</h5>
         <h4>DEV LICENCE</h4>
         <div class="card_front_content">
         <div class="left_column">
@@ -19,7 +20,6 @@
                             </div>
                             <div class="right_column">
                             <ol id="font_ol">
-                            <li><span id="bold_id">${data.id}</span></li>
                             <li>${data.name}</li>
                             <li>${data.company}</li>
                             <li>${data.location}</li>

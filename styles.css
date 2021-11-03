@@ -49,7 +49,7 @@ border: 1px solid rgb(124, 64, 121);
   flex-direction: row;
     width: 350px;
     height: 210px;
-    background-image: url('https://media.istockphoto.com/photos/pastel-colored-holographic-background-picture-id1144959743?k=20&m=1144959743&s=170667a&w=0&h=a9HwsJhxHPb21T4EgHB1IFlRERsbq65jb0Blv6N_nj4='), linear-gradient(to right bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
+    background-image: url('https://media.istockphoto.com/photos/pastel-colored-holographic-background-picture-id1144959743?k=20&m=1144959743&s=170667a&w=0&h=a9HwsJhxHPb21T4EgHB1IFlRERsbq65jb0Blv6N_nj4='), linear-gradient(to left bottom, #faaadf, #f7a0e4, #fd99df, #f597d1, #f178d7); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
     background-position: center;
@@ -172,11 +172,10 @@ table, th, td {
 /*This is coded CSS rainbow*/
 
 #github_logo_card {
-  font-size: 50px;
+  font-size: 60px;
   position: absolute;
-  top: 5;
-  right: 0;
-  margin-right: 12px;
+  top: 5px;
+  right: 25px;
 -webkit-animation:rainbow 3s infinite;
 -ms-animation:rainbow 3s infinite;
 -o-animation:rainbow 3s infinite;
@@ -281,6 +280,7 @@ ol li{
 h4{
   margin: 10px 0 0 0;
   padding: 0;
+  letter-spacing: 1px;
 }
 
 #name_input{
@@ -293,4 +293,15 @@ h4{
 
 #trigger-btn{
   width: 100px;
+}
+
+h5{
+  position: absolute;
+  bottom: 5px;
+  margin: 0;
+  left: 5;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgb(44, 44, 44);
+  letter-spacing: 3px;
 }
