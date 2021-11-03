@@ -30,10 +30,7 @@ body {
   flex-direction: column;
   -webkit-flex-direction: column;
 }
-.title {
-  margin-bottom: 30px;
-  color: #162969;
-}
+
 
 .card {
   display: none;
@@ -42,7 +39,6 @@ body {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px;
-
 }
 
 .card__part {
@@ -179,10 +175,10 @@ td {
   right: 25px;
   line-height: 1px;
   background-clip: text;
--webkit-background-clip: text;
-color: transparent;
-background-size: initial;
-background-image: url("public/logo_animation.gif")
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: initial;
+  background-image: url("public/logo_animation.gif");
   /* -webkit-animation: rainbow 3s infinite;
   -ms-animation: rainbow 3s infinite;
   -o-animation: rainbow 3s infinite;
