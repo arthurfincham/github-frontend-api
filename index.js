@@ -4,8 +4,6 @@ const exampleForm = document.getElementById("username");
 const button = document.querySelector("#trigger-btn");
 const card = document.querySelector("#dev_card");
 const input = document.querySelector("#name_input");
-const front = document.querySelector("#front_of_card");
-const back = document.querySelector("#back_of_card");
 
 const show_card = () => {
   input.style.display = 'none';
