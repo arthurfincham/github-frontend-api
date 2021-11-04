@@ -14,7 +14,7 @@
 ## Tools
 
 * [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to make the API call and get information about the GitHub user.
-* Used CSS from [this codepen](https://codepen.io/veronicadev/pen/VXqZgR) by [@veronicadev](https://codepen.io/veronicadev) for the flipping card. Thank you Veronica!
+* Used CSS from [this codepen](https://codepen.io/veronicadev/pen/VXqZgR) by [@veronicadev](https://github.com/veronicadev) for the flipping card. Thank you Veronica!
 * [Animate.css](https://animate.style/) for further animation.
 * [Express.js](https://expressjs.com/) for my web framework.
 * [Heroku](https://dashboard.heroku.com/) for deployment.
